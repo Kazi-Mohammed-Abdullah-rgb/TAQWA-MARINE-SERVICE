@@ -282,3 +282,18 @@ details .row b{font:600 14px var(--head);color:var(--primary)}details ul{padding
   details .row{grid-template-columns:1fr;gap:2px}.banner{padding:70px 20px 50px}.banner h1{font-size:32px}.fcard{padding:20px}.ab-img img{height:200px}
 }
  
+.hero p.sub,
+.hero .tagline{
+  display:block;
+  position:static;
+  top:auto;
+  left:auto;
+  min-width:0;
+  background:none;
+  box-shadow:none;
+  border:0;
+  font:600 17px/1.5 var(--head);
+  color:var(--accent);
+  margin-bottom:15px;
+  max-width:100%;
+}
