@@ -297,3 +297,21 @@ details .row b{font:600 14px var(--head);color:var(--primary)}details ul{padding
   margin-bottom:15px;
   max-width:100%;
 }
+
+/* ===== mobile & tablet: show email, phone and search in the top bar ===== */
+@media(max-width:1024px){
+  .top-r{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px 20px;padding:10px 20px 10px 0;margin-left:auto}
+  .info{gap:4px 20px}
+  .search input{width:150px}
+}
+@media(max-width:767px){
+  .top .wrap{align-items:stretch}
+  .logo{width:36%;min-width:120px;padding:0 6px;height:auto;min-height:100px}
+  .logo img{padding:6px}
+  .top-r{flex:1;min-width:0;flex-direction:column;align-items:flex-end;justify-content:center;gap:8px;padding:10px 12px}
+  .info{flex-direction:column;align-items:flex-end;gap:2px;font-size:12px}
+  .info li{overflow-wrap:anywhere;text-align:right}
+  .search{width:100%}
+  .search input{width:100%;min-width:0;height:38px;padding:6px 12px;font-size:14px}
+  .search button{width:40px;flex:none}
+}
